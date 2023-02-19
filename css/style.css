@@ -1,0 +1,130 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container{
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: -90% -500px, 170% 400px;
+    background-color: var(--dark-cyan);
+    width: 100vw;
+    height: 100vh;
+    
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.image{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.name_and_age{
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.social_user{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.user_image{
+    border-radius: 50%;
+    margin-top: -50px; 
+    border: 5px solid #fff;  
+}
+
+.line{
+    border: 1px solid rgb(241, 238, 238);
+    width: 100%;
+    margin: 30px 0 30px;
+}
+
+.name{
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.age, .city, .social_description{
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.social_quantity{
+    font-weight: 600;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1.1rem;
+}
+
+.social_description{
+    margin-top: 4px;
+    font-size: 0.7rem;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 900px){
+    .container{
+        background-position: -55% 250px, 140% -100px;
+    }
+    
+    .content{
+        width: 75%;
+    }
+
+    .name_and_age{
+        width: 52%;
+    }
+}
